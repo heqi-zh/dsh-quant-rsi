@@ -1,0 +1,19 @@
+{
+  "name": "@dqr/harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": ".venv/bin/python -m unittest discover -s tests -v",
+    "build:tools": "tsc -p tools/tsconfig.json",
+    "typecheck": "tsc -p tools/tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2",
+    "@dqr/tools": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "total_trials_per_data_evaluator": 6,
+  "max_rounds_per_run": 3,
+  "max_seconds_per_run": 300,
+  "max_consecutive_failures": 2,
+  "no_improvement_patience": 2
+}

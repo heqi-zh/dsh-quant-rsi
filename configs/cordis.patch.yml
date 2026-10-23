@@ -1,0 +1,15 @@
+# Register @dqr/tools in your DSH package resolution before mounting this patch.
+# All three entries must share root/dataDir. python is an executable, not a command string.
+- insert:
+    - id: dqr-fund-analysis
+      name: '@dqr/tools/fund-analysis'
+      config:
+        root: !!js process.cwd()
+    - id: dqr-strategy-eval
+      name: '@dqr/tools/strategy-eval'
+      config:
+        root: !!js process.cwd()
+    - id: dqr-research-loop
+      name: '@dqr/tools/research-loop'
+      config:
+        root: !!js process.cwd()

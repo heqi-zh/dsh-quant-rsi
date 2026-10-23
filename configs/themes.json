@@ -1,0 +1,162 @@
+{
+  "version": "themes-v1",
+  "tag_basis": "基金名称关键词；未穿透持仓",
+  "themes": [
+    {
+      "id": "chips",
+      "name": "半导体与芯片",
+      "family": "科技",
+      "pattern": "半导体|芯片|集成电路"
+    },
+    {
+      "id": "ai",
+      "name": "人工智能与算力",
+      "family": "科技",
+      "pattern": "人工智能|算力|大数据|云计算"
+    },
+    {
+      "id": "robotics",
+      "name": "机器人与智能制造",
+      "family": "科技",
+      "pattern": "机器人|智能制造|自动化|工业4"
+    },
+    {
+      "id": "software",
+      "name": "软件与计算机",
+      "family": "科技",
+      "pattern": "软件|计算机|信息技术|信息产业"
+    },
+    {
+      "id": "communications",
+      "name": "通信与5G",
+      "family": "科技",
+      "pattern": "通信|通讯|5G|6G"
+    },
+    {
+      "id": "electronics",
+      "name": "电子与消费电子",
+      "family": "科技",
+      "pattern": "电子"
+    },
+    {
+      "id": "internet",
+      "name": "互联网与传媒",
+      "family": "科技",
+      "pattern": "互联网|传媒|游戏|文娱"
+    },
+    {
+      "id": "technology",
+      "name": "综合科技",
+      "family": "科技",
+      "pattern": "科技|科创"
+    },
+    {
+      "id": "nonferrous",
+      "name": "有色金属",
+      "family": "资源",
+      "pattern": "有色|工业金属"
+    },
+    {
+      "id": "rareearth",
+      "name": "稀土与稀有金属",
+      "family": "资源",
+      "pattern": "稀土|稀有金属"
+    },
+    {
+      "id": "gold",
+      "name": "黄金与贵金属",
+      "family": "资源",
+      "pattern": "黄金|贵金属"
+    },
+    {
+      "id": "coal",
+      "name": "煤炭",
+      "family": "能源",
+      "pattern": "煤炭"
+    },
+    {
+      "id": "oilgas",
+      "name": "石油与油气",
+      "family": "能源",
+      "pattern": "石油|油气|原油|油服"
+    },
+    {
+      "id": "photovoltaic",
+      "name": "光伏",
+      "family": "新能源",
+      "pattern": "光伏"
+    },
+    {
+      "id": "battery",
+      "name": "电池与储能",
+      "family": "新能源",
+      "pattern": "电池|锂电|储能"
+    },
+    {
+      "id": "ev",
+      "name": "汽车与新能源车",
+      "family": "新能源",
+      "pattern": "汽车|新能源车"
+    },
+    {
+      "id": "cleanenergy",
+      "name": "新能源与风电",
+      "family": "新能源",
+      "pattern": "新能源|风电|清洁能源"
+    },
+    {
+      "id": "power",
+      "name": "电力与电网",
+      "family": "公用事业",
+      "pattern": "电力|电网|绿电"
+    },
+    {
+      "id": "defense",
+      "name": "军工与航空航天",
+      "family": "高端制造",
+      "pattern": "军工|国防|航空|航天|卫星"
+    },
+    {
+      "id": "health",
+      "name": "医药与医疗",
+      "family": "医药",
+      "pattern": "医药|医疗|创新药|生物科技"
+    },
+    {
+      "id": "consumer",
+      "name": "消费与食品饮料",
+      "family": "消费",
+      "pattern": "消费|食品|饮料|白酒"
+    },
+    {
+      "id": "agriculture",
+      "name": "农业与养殖",
+      "family": "消费",
+      "pattern": "农业|农林牧渔|畜牧|养殖"
+    },
+    {
+      "id": "bank",
+      "name": "银行",
+      "family": "金融",
+      "pattern": "银行(?!业)"
+    },
+    {
+      "id": "securities",
+      "name": "证券与保险",
+      "family": "金融",
+      "pattern": "证券|券商|保险"
+    },
+    {
+      "id": "infrastructure",
+      "name": "基建与地产",
+      "family": "周期",
+      "pattern": "基建|建筑|地产|建材"
+    },
+    {
+      "id": "environment",
+      "name": "环保与碳中和",
+      "family": "公用事业",
+      "pattern": "环保|碳中和"
+    }
+  ]
+}

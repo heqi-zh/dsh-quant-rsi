@@ -1,0 +1,23 @@
+{
+  "version": "otc-v1",
+  "funds": ["000001", "110022"],
+  "initial_cash": 100000,
+  "purchase_fee": 0.0015,
+  "redemption_fees": [[7, 0.015], [30, 0.005], [1000000, 0.0]],
+  "confirmation_sessions": 1,
+  "settlement_sessions": 3,
+  "min_trade": 100,
+  "validation_start": "2023-01-01",
+  "validation_end": "2025-12-31",
+  "max_drawdown": 0.30,
+  "max_trials_per_snapshot": 3,
+  "candidate_timeout_seconds": 10,
+  "history_sessions": 252,
+  "assumptions": [
+    "Example fund pool and fee schedule; verify product and sales-channel rules before use.",
+    "Historical NAV is visible only on the following common NAV session; historical publication timestamps are unavailable.",
+    "Orders use that session's NAV; confirmation and settlement delays count common NAV sessions, not verified fund calendars.",
+    "Historical purchase/redemption suspensions and limits are unavailable; this is a rule-assumption simulation.",
+    "Cash dividends only; no external contributions, money-market funds, QDII or special holding-period products."
+  ]
+}

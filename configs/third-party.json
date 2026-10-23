@@ -1,0 +1,83 @@
+{
+  "vnpy": {
+    "url": "https://github.com/vnpy/vnpy",
+    "provenance": {
+      "repository": "vnpy",
+      "commit": "c6e231caf32b7fc97e6459817fff66458cf7e7c4",
+      "changes": "openevolve imports namespaced; vnpy alpha files unchanged; ArrayManager class extracted",
+      "files": {
+        "utility.py": {
+          "source": "vnpy/alpha/dataset/utility.py",
+          "upstream_sha256": "49369cf93bd9eec0cb7f8f64df73a68d0161c5a7a569d6dda16b31ddab3be3e5",
+          "vendored_sha256": "49369cf93bd9eec0cb7f8f64df73a68d0161c5a7a569d6dda16b31ddab3be3e5"
+        },
+        "ts_function.py": {
+          "source": "vnpy/alpha/dataset/ts_function.py",
+          "upstream_sha256": "88443ae16d4065406cdc7b6e034d72eceb1d06736ab97508d3c82a50d43ad18f",
+          "vendored_sha256": "88443ae16d4065406cdc7b6e034d72eceb1d06736ab97508d3c82a50d43ad18f"
+        },
+        "cs_function.py": {
+          "source": "vnpy/alpha/dataset/cs_function.py",
+          "upstream_sha256": "7cb7781ef5eac2e11c7abc632b139a13d5807c24b8093ad0e8f5fca22496a112",
+          "vendored_sha256": "7cb7781ef5eac2e11c7abc632b139a13d5807c24b8093ad0e8f5fca22496a112"
+        },
+        "math_function.py": {
+          "source": "vnpy/alpha/dataset/math_function.py",
+          "upstream_sha256": "1e2729a54fe2a0178532c9d3fcf1236856d7c4278aaa96df730316a3a91013e1",
+          "vendored_sha256": "1e2729a54fe2a0178532c9d3fcf1236856d7c4278aaa96df730316a3a91013e1"
+        },
+        "ta_function.py": {
+          "source": "vnpy/alpha/dataset/ta_function.py",
+          "upstream_sha256": "1987665e2f0e25439611aff469743212a13103ac36b854d327361c3f149c6cea",
+          "vendored_sha256": "1987665e2f0e25439611aff469743212a13103ac36b854d327361c3f149c6cea"
+        },
+        "array_manager.py": {
+          "source": "vnpy/trader/utility.py",
+          "extraction": "ArrayManager class unchanged; minimal imports and postponed annotations",
+          "upstream_sha256": "a40621d812236509482d851c4ec8f36c017b54939e8ab47655d15f5a865c74ac",
+          "vendored_sha256": "1b51cdd3217ea0e83068b29c16adb19179c4397da4ee7a620e58a101f86d2cf2"
+        }
+      }
+    }
+  },
+  "openevolve": {
+    "url": "https://github.com/algorithmicsuperintelligence/openevolve",
+    "provenance": {
+      "repository": "openevolve",
+      "commit": "515d1bcb7b36ac64bbe028f8d83b5d08315ca4b5",
+      "changes": "openevolve imports namespaced; vnpy alpha files unchanged; ArrayManager class extracted; embedding setup explicitly disabled in the offline database adapter",
+      "files": {
+        "database.py": {
+          "source": "openevolve/database.py",
+          "upstream_sha256": "5fe668f274099ab820634f0154a9a0cc64c4ee3dc032b9d0a31e283bf9b51c6b",
+          "vendored_sha256": "16e0618b4644fbb19c7e74a3df62cd0c50ee44edec42b3aaebdfb2e4cdbeeaba"
+        },
+        "config.py": {
+          "source": "openevolve/config.py",
+          "upstream_sha256": "a1a779990064aa89f04ceffcd1f3f22925d59cd7065b16daa2a73521da15c01f",
+          "vendored_sha256": "cf4a850fa83d0540ff8cd2889eefce5af8d97086fb163e969096744f2e78d849"
+        },
+        "population.py": {
+          "source": "openevolve/population.py",
+          "upstream_sha256": "32a30a125c0790b29d7882bd3a53f86e64e7ca98fc756d3ed799252f767ba8de",
+          "vendored_sha256": "32a30a125c0790b29d7882bd3a53f86e64e7ca98fc756d3ed799252f767ba8de"
+        },
+        "evaluation_result.py": {
+          "source": "openevolve/evaluation_result.py",
+          "upstream_sha256": "3f5de9c5821ea6e894bf3692b333282f9b5e7f9623443c8b6ec277efde9159cc",
+          "vendored_sha256": "3f5de9c5821ea6e894bf3692b333282f9b5e7f9623443c8b6ec277efde9159cc"
+        },
+        "utils/code_utils.py": {
+          "source": "openevolve/utils/code_utils.py",
+          "upstream_sha256": "bbeb862b5fbfe4688e834c4af129f23f8a12e1ecb86d94ce2f5c65270ca938c8",
+          "vendored_sha256": "bbeb862b5fbfe4688e834c4af129f23f8a12e1ecb86d94ce2f5c65270ca938c8"
+        },
+        "utils/metrics_utils.py": {
+          "source": "openevolve/utils/metrics_utils.py",
+          "upstream_sha256": "e2d40a2179052e3ce5ab64be3b803d6c51e3792ec136cb8c12c52a3f543bb2ec",
+          "vendored_sha256": "e2d40a2179052e3ce5ab64be3b803d6c51e3792ec136cb8c12c52a3f543bb2ec"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+tools/lib/
+.dsh/
+.pnpm-store/
+data/
+*.egg-info/
+.DS_Store
+
+# Third-party sources are prepared locally from pinned upstream links.
+/runtime/dqr/vendor/vnpy/
+/runtime/dqr/vendor/openevolve/
+
+# Local credentials, editor settings, archives and private discussion notes.
+.env
+.env.*
+!.env.example
+auth.json
+.ssh/
+.codex/
+credentials.json
+*.pem
+*.key
+.idea/
+.vscode/
+/开发计划.txt
+dist/
+build/
+*.log

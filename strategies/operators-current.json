@@ -1,0 +1,31 @@
+{
+  "schema": "dqr.operator-program.v1",
+  "name": "fund-multifactor-v1",
+  "description": "Explicit vn.py operator graph: momentum, trend, downside risk, drawdown and stability. Initial unoptimized program.",
+  "operators": {
+    "momentum": {"parameters": ["series", "n"], "expression": "series / ts_delay(series, n) - 1"},
+    "risk_adjusted": {"parameters": ["value", "returns", "n"], "expression": "value / greater(ts_std(returns, n), 0.001)"}
+  },
+  "features": [
+    {"name": "return_20", "expression": "momentum(total_return_index, 20)"},
+    {"name": "return_60", "expression": "momentum(total_return_index, 60)"},
+    {"name": "daily_volatility_20", "expression": "ts_std(return_1, 20)"},
+    {"name": "downside_volatility", "expression": "ts_std(less(return_1, 0), 20)"},
+    {"name": "drawdown_60", "expression": "total_return_index / ts_max(total_return_index, 60) - 1"},
+    {"name": "trend_slope", "expression": "ts_slope(total_return_index, 20) / ts_mean(total_return_index, 20)"},
+    {"name": "trend_fit", "expression": "ts_rsquare(total_return_index, 20)"},
+    {"name": "ema_gap", "expression": "am_ema(total_return_index, 10) / am_ema(total_return_index, 30) - 1"},
+    {"name": "technical_rsi", "expression": "ta_rsi(total_return_index, 14)"},
+    {"name": "return_quantile", "expression": "ts_quantile(return_1, 60, 0.1)"},
+    {"name": "risk_adjusted_momentum", "expression": "risk_adjusted(return_20, return_1, 20)"},
+    {"name": "smoothed_momentum", "expression": "ts_decay_linear(risk_adjusted_momentum, 3)"},
+    {"name": "momentum_contribution", "expression": "cs_rank(smoothed_momentum) * 0.4"},
+    {"name": "trend_contribution", "expression": "cs_rank(ema_gap) * 0.25"},
+    {"name": "risk_contribution", "expression": "cs_rank(-downside_volatility) * 0.2"},
+    {"name": "drawdown_contribution", "expression": "cs_rank(drawdown_60) * 0.15"}
+  ],
+  "score": "momentum_contribution + trend_contribution + risk_contribution + drawdown_contribution",
+  "portfolio": {"rebalance": "weekly", "top_k": 1, "exposure": 0.8},
+  "warmup_sessions": 100,
+  "optimized": false
+}
